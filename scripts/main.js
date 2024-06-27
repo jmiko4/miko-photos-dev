@@ -13,3 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
     loadContent("header.html", "header");
     loadContent("footer.html", "footy");
 });
+
+function nav() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

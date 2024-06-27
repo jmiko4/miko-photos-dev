@@ -51,7 +51,7 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 
-function myFunction() {
+function nav() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
