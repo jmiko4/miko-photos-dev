@@ -1,0 +1,234 @@
+
+@media screen and (min-width:700px) {
+
+    .modal-content {
+        /* max-height: 100%; */
+        width: 95%;
+        height: auto;
+    }
+
+    
+
+
+    #portfolios {
+        grid-row: 2/3;
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        /* vertical-align: middle; */
+        position: relative;
+        text-align: center;
+        padding: 0 4px;
+        flex: 100%;
+    }
+
+
+    #portfolios img {
+        width: 100%;
+        vertical-align: middle;
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+
+    .portfolio_main {
+        background-color: var(--primary-color);
+        padding: 1.5em;
+        grid-template-rows: .1fr 11fr .1fr;
+    }
+
+    .portfolio-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #bg-header {
+        width: 100%;
+        background-color: #38383b;
+    }
+
+    header #navbar {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+        overflow: hidden;
+
+        /* background-color: var(--primary-color); */
+        position: relative;
+
+        /* transition:all .26s ease-in-out; */
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+        position: relative;
+
+        /* visibility: hidden; */
+        /* height: 0; */
+        /* overflow: hidden;
+        -webkit-transition:all .26s ease-in-out;
+        -moz-transition:all .26s ease-in-out;
+        -ms-transition:all .26s ease-in-out;
+        -o-transition:all .26s ease-in-out; */
+        transition: all .26s ease-in-out;
+    }
+
+    .topnav img {
+        width: 150px;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: var(--secondary-color);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+
+        /* transition:all .26s ease-in-out; */
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        /* background: var(--accent2-color); */
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: -2.5em;
+    }
+
+    .fa-fa-bars img {
+        width: 50%;
+        /* filter: invert(1); */
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        /* background-color: var(--primary-color); */
+        color: var(--accent1-color);
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        /* background-color: var(--primary-color); */
+        color: var(--primary-color);
+    }
+
+    /* #footer {
+        grid-template-columns: .5fr 1fr .5fr;
+    } */
+    /* .home-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        font-size: 1.5em;
+    } */
+    /* .home-footer img {
+        width: 30%;
+    } */
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    #intro-container {
+        margin: 0 auto;
+
+        /* text-align: center; */
+        padding: 0;
+    }
+
+    #social-container {
+        margin: 0 auto;
+    }
+
+    .social-container {
+        height: 100px;
+
+        /* padding: 1em; */
+        padding-top: 100px;
+    }
+
+    .social-container img {
+        max-width: 90px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        /* margin-top: -3em; */
+        padding: 0;
+        font-size: 1.5em;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+
+        /* margin-top: -3em; */
+        padding: 0;
+        font-size: 1.5em;
+    }
+
+    #contact-container {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-container {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .youtube-video {
+        aspect-ratio: auto 16/9;
+        width: 480px;
+        height: 270px;
+        max-width: 90%;
+    }
+
+    .email {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        width: 65px;
+        margin: 0 auto;
+    }
+
+    .ig {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 50px;
+        margin: 0 auto;
+    }
+
+    .fb {
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+        /* margin-left: -5px; */
+        width: 50px;
+        margin: 0 auto;
+    }
+
+    .home-page-flex{
+        display: flex;
+        flex-direction: row;
+        height:90vh;
+        width:600px;
+        align-items:center;
+        margin:0 auto;
+    
+    }
+}
