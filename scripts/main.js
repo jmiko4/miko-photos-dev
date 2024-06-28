@@ -1,15 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('header');
-    if (header) {
-        header.innerHTML = '<h1>Photography Portfolio</h1>';
-    } else {
-        console.error('Element with id "header" not found.');
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to load HTML content into a specified element
+    function loadContent(url, elementId) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading content:', error));
     }
 
-    const footer = document.getElementById('footy');
-    if (footer) {
-        footer.innerHTML = '<p>&copy; 2023 Photography Portfolio</p>';
-    } else {
-        console.error('Element with id "footy" not found.');
-    }
+    // Load the header and footer content
+    loadContent("header.html", "header");
+    loadContent("footer.html", "footy");
 });
+
+function nav() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

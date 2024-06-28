@@ -1,3 +1,26 @@
+// const images = gsap.utils.toArray('.myImg');
+// images.forEach(img => {
+//     gsap.from(img, {
+//         opacity: 0,
+//         y: 40
+//     })
+//     gsap.to(img, {
+//         scrollTrigger: img,
+//         opacity: 1,
+//         y: 0,
+//         once: true
+//         // duration: .
+
+//         // duration:1,
+//         // delay:.25,
+//         // scrollTrigger: {
+//         //     trigger: img,
+//         //     // gsap.fromTo('myImg',{opacity:0},{opacity:1,duration:1});
+//         //     scrub: true
+//         // }
+//     })
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('data/images.json')
         .then(response => response.json())
